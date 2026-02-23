@@ -1,36 +1,76 @@
 body {
-  font-family: Arial;
-  background: #f4f4f4;
-  text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c94cdf, #d91eb7);
+    margin: 0;
 }
 
-.container {
-  width: 300px;
-  margin: 100px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
+/* Register Card */
+.register-card {
+    width: 380px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-input {
-  display: block;
-  width: 90%;
-  margin: 10px auto;
-  padding: 8px;
+.register-card:hover {
+    transform: translateY(-5px);
 }
 
-button {
-  padding: 8px 15px;
-  margin-top: 10px;
-  background: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* Input styling */
+.form-control {
+    border-radius: 10px;
+    border-color: #1c1c1d;
+    padding: 10px;
 }
 
-.event-card {
-  background: white;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 8px;
+/* Button styling */
+.btn-primary {
+    background: #1a4b57df;
+    border: 1cm;
+    font-weight: 600;
+    transition: 0.3s;
 }
+
+.btn-primary:hover {
+    background: #2e59d9;
+    transform: scale(1.05);
+}
+
+/* Login link */
+.login-link {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #1c1c1d;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: rgb(105, 8, 8);
+    
+}
+
+.login-card{
+    width: 380px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+.register-link {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #1c1c1d;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: rgb(105, 8, 8);
+}   
