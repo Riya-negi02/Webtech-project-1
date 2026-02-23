@@ -58,13 +58,20 @@ function loadEvents(){
 
     events.forEach((event, index) => {
         eventList.innerHTML += `
-        <div class= "event-card">
-        <h3>${event.title}</h3>
-        <p>${event.date}</p>
-        <p>${event.location}</p>
-        <button onclick = "bookEvent(${index})">Book</button>
+        <div class="col-md-4 mb-4">
+        <div class="card event-card shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">${event.title}</h5>
+                <p>${event.date}</p>
+                <p>${event.location}</p>
+                <button class="btn btn-book px-4 mt-2"
+                    onclick="bookEvent(${index})">
+                    Book Now
+                </button>
+            </div>
         </div>
-        `;
+    </div>
+    `;
     });
     loadBookings();
     }
