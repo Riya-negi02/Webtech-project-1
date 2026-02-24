@@ -110,3 +110,36 @@ body {
     background: #f4c6c6;
     transform: scale(1.05);
 }
+
+/* Admin Add Card */
+.admin-add-card {
+    border-radius: 15px;
+}
+
+/* Gradient Button */
+.btn-gradient {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #5a67d8, #6b46c1);
+}
+
+/* Delete Button */
+.btn-delete {
+    background: #ff4d4d;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 6px 15px;
+}
+
+.btn-delete:hover {
+    background: #cc0000;
+}

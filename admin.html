@@ -17,17 +17,30 @@
 </nav>
 
 <div class="container mt-5">
-    
-        <h2 class="text-center mb-4">Add Event</h2>
-        <input type="text" id="eventTitle" class="form-control mb-3" placeholder="Event Title">
-        <input type="date" id="eventDate" class="form-control mb-3">
-        <input type="text" id="eventLocation" class="form-control mb-3" placeholder="Location">
-        <button class="btn btn-primary w-100 rounded-pill" onclick="addEvent()">Add Event</button>
-
-        <h2 class="text-center mb-4">All Events</h2>
-        <div id="eventList"></div>
+    <div class="card shadow-lg p-4 mb-5 border-0 admin-add-card">
+        <h4 class="mb-3">Add New Event</h4>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <input type="text" id="eventTitle" class="form-control" placeholder="Event Title">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="date" id="eventDate" class="form-control">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input type="text" id="eventLocation" class="form-control" placeholder="Location">
+            </div>
         </div>
 
+        <button class="btn btn-gradient px-4 mt-2" onclick="addEvent()">
+            Add Event
+        </button>
+    </div>
+
+    <h4 class="section-title">All Events</h4>
+    <div class="row" id="eventList"></div>
+
+    </div>
+       
         <script src="script.js"></script>
     </body>
 </html>
