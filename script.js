@@ -46,6 +46,32 @@ function addEvent(){
     alert("Event Added!");
     loadEvents();
 }
+
+//check login
+function checkLogin(){
+
+    let user = localStorage.getItem("loggedInUser");
+
+    let authButtons = document.getElementById("authButtons");
+
+    let logoutBtn = document.getElementById("logoutBtn");
+
+
+    if(user){
+
+        authButtons.style.display = "none";
+        logoutBtn.style.display = "block";
+
+    }
+    else{
+
+        authButtons.style.display = "block";
+        logoutBtn.style.display = "none";
+
+    }
+
+    loadEvents();
+}
  
 //load events
 function loadEvents(){
